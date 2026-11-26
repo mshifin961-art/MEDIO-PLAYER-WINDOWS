@@ -1,0 +1,12 @@
+.gradle/
+build/
+.idea/
+*.iml
+*.log
+out/
+dist/
+installer/Output/
+.DS_Store
+Thumbs.db
+*.db
+*.db-journal

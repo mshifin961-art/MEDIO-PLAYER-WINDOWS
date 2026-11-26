@@ -1,0 +1,24 @@
+[versions]
+kotlin = "2.0.21"
+compose = "1.7.1"
+coroutines = "1.9.0"
+vlcj = "4.8.3"
+sqlite = "3.47.1.0"
+jaudiotagger = "3.0.1"
+junit5 = "5.11.3"
+slf4j = "2.0.16"
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+vlcj = { module = "uk.co.caprica:vlcj", version.ref = "vlcj" }
+sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite" }
+jaudiotagger = { module = "net.jthink:jaudiotagger", version.ref = "jaudiotagger" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit5" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose-desktop = { id = "org.jetbrains.compose", version.ref = "compose" }
